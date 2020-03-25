@@ -1,0 +1,2 @@
+rootProject.name='GBF Spark and Skill Calculator'
+include ':app'
