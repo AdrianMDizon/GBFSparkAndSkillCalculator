@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/crystalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        android:text="Crystals:"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/crystalInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:text="0"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="@id/sparkInsert"
+        app:layout_constraintBottom_toBottomOf="@id/crystalLabel" />
+
+    <TextView
+        android:id="@+id/singleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        android:text="1x Tickets:"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/crystalLabel"/>
+
+    <EditText
+        android:id="@+id/singleInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:text="0"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="@id/sparkInsert"
+        app:layout_constraintBottom_toBottomOf="@id/singleLabel" />
+
+    <TextView
+        android:id="@+id/tenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        android:text="10x Tickets:"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/singleLabel"/>
+
+    <EditText
+        android:id="@+id/tenInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:text="0"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="@id/sparkInsert"
+        app:layout_constraintBottom_toBottomOf="@id/tenLabel" />
+
+    <TextView
+        android:id="@+id/sparkLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        android:text="Current sparks:"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tenLabel"/>
+
+    <EditText
+        android:id="@+id/sparkInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:ems="8"
+        android:inputType="number"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/sparkLabel"
+        app:layout_constraintBottom_toBottomOf="@id/sparkLabel" />
+
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:text="_____ / 300"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sparkLabel"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:textSize="20sp"
+        android:text="Calculate"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultText"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
